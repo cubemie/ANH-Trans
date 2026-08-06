@@ -12,6 +12,8 @@ const navItems = [
   { to: "/layanan", label: "Layanan" },
   { to: "/harga", label: "Harga" },
   { to: "/galeri", label: "Galeri" },
+  { to: "/testimoni", label: "Testimoni" },
+  { to: "/faq", label: "FAQ" },
   { to: "/kontak", label: "Kontak" },
 ];
 

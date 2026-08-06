@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { ChevronLeft, Users, Cog, Fuel, Check } from "lucide-react";
-import { Badge, Container, WhatsAppButton } from "@busgo/ui";
+import { ChevronLeft, Users, Cog, Fuel, Check, ClipboardList } from "lucide-react";
+import { Badge, Container } from "@busgo/ui";
 import { getFleetBySlug, fleetCategoryLabel } from "@/data/fleet";
 import { formatRupiah } from "@/lib/format";
-import { siteConfig } from "@/lib/site-config";
-import { quickBookingMessage } from "@/lib/whatsapp";
 
 export function FleetDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -88,14 +86,16 @@ export function FleetDetailPage() {
                   </li>
                 ))}
               </ul>
-              <WhatsAppButton
-                phone={siteConfig.whatsappNumber}
-                message={quickBookingMessage(fleet.name)}
-                fullWidth
-                size="lg"
+              <Link
+                to={`/pesan?armada=${encodeURIComponent(fleet.name)}`}
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-6 py-4 text-base font-semibold text-white transition-colors shadow-sm"
               >
-                Booking Sekarang
-              </WhatsAppButton>
+                <ClipboardList className="h-5 w-5" />
+                Isi Formulir & Pesan
+              </Link>
+              <p className="text-xs text-slate-400 text-center mt-2">
+                Anda akan diarahkan untuk mengisi formulir pemesanan terlebih dahulu.
+              </p>
             </div>
           </div>
         </div>

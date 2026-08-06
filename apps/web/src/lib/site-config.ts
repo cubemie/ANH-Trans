@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Solusi Transportasi Terbaik untuk Perjalanan Anda",
   description:
     "Platform digital promosi & pemesanan Bus Pariwisata dan Travel. Booking cepat, harga transparan, langsung via WhatsApp.",
-  whatsappNumber: "6281234567890", // ganti dengan nomor admin asli, format internasional tanpa "+"
+  whatsappNumber: "6289522907848", // ganti dengan nomor admin asli, format internasional tanpa "+"
   instagram: "https://instagram.com/busgo.id",
   facebook: "https://facebook.com/busgo.id",
   email: "cs@busgo.id",

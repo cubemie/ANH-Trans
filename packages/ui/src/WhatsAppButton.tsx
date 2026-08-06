@@ -4,7 +4,7 @@ import { cn } from "./cn";
 
 export interface WhatsAppButtonProps
   extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  /** Nomor WhatsApp admin, format internasional tanpa "+" contoh: 6281234567890 */
+  /** Nomor WhatsApp admin, format internasional tanpa "+" contoh: 6289522907848 */
   phone: string;
   /** Pesan yang sudah diformat (sudah di-encode oleh caller atau raw text) */
   message: string;

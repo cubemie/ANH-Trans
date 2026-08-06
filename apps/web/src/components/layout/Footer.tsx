@@ -21,7 +21,10 @@ const linkGroups = [
   },
   {
     title: "Bantuan",
-    links: [{ to: "/faq", label: "FAQ" }],
+    links: [
+      { to: "/testimoni", label: "Testimoni" },
+      { to: "/faq", label: "FAQ" },
+    ],
   },
 ];
 

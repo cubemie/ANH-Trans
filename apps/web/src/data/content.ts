@@ -42,10 +42,12 @@ export const testimonials: Testimonial[] = [
 
 export const faqs: FaqItem[] = [
   { question: "Apakah bisa DP?", answer: "Bisa. Umumnya kami menerapkan DP 30% dari total harga untuk mengunci jadwal armada, sisanya dilunasi mendekati/pada hari keberangkatan." },
-  { question: "Bagaimana cara booking?", answer: "Pilih armada yang sesuai kebutuhan, isi form pemesanan singkat di website, lalu klik \"Pesan via WhatsApp\". Chat Anda akan langsung terkirim ke Admin untuk diproses." },
   { question: "Apakah harga bisa nego?", answer: "Harga di website adalah estimasi awal \"mulai dari\". Harga final dapat didiskusikan langsung bersama Admin melalui WhatsApp sesuai tanggal, tujuan, dan durasi perjalanan." },
-  { question: "Apakah tersedia driver?", answer: "Ya, semua paket sewa sudah termasuk driver (dan co-driver untuk perjalanan jauh/luar kota) yang berpengalaman." },
+  { question: "Apakah sudah termasuk sopir?", answer: "Ya, semua paket sewa sudah termasuk driver (dan co-driver untuk perjalanan jauh/luar kota) yang berpengalaman dan berlisensi resmi." },
+  { question: "Apakah melayani luar kota?", answer: "Ya, kami melayani perjalanan ke seluruh wilayah Indonesia. Untuk rute luar kota, biaya BBM dan tol bersifat kondisional dan akan dikonfirmasi bersama Admin." },
+  { question: "Bagaimana cara booking?", answer: "Pilih armada yang sesuai kebutuhan, isi form pemesanan singkat di website, lalu klik \"Pesan via WhatsApp\". Chat Anda akan langsung terkirim ke Admin untuk diproses." },
   { question: "Apakah armada bisa disewa untuk 1 hari saja?", answer: "Bisa. Kami melayani sewa harian, charter beberapa hari, maupun drop off satu arah." },
+  { question: "Apakah ada biaya tambahan?", answer: "Untuk perjalanan luar kota, biaya BBM, tol, dan penginapan driver (jika diperlukan) bersifat kondisional. Semuanya akan diinformasikan secara transparan sebelum booking dikonfirmasi." },
 ];
 
 export const galleryImages: GalleryImage[] = [

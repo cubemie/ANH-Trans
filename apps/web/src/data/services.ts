@@ -9,4 +9,5 @@ export const services: ServiceItem[] = [
   { icon: "Heart", title: "Wedding", description: "Transportasi tamu undangan pernikahan, tepat waktu dan terorganisir." },
   { icon: "Building2", title: "Event Perusahaan", description: "Mobilisasi karyawan untuk corporate trip, gathering, atau acara perusahaan." },
   { icon: "PackageCheck", title: "Drop Off & Charter Bus", description: "Fleksibel — sewa harian, drop off satu arah, atau charter sesuai kebutuhan." },
+  { icon: "ArrowLeftRight", title: "Shuttle", description: "Layanan shuttle rutin untuk perjalanan reguler antar titik dengan jadwal yang fleksibel." },
 ];

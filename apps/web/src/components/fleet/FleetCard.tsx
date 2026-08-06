@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Users, Calendar } from "lucide-react";
-import { Badge, Card, WhatsAppButton } from "@busgo/ui";
+import { Badge, Card } from "@busgo/ui";
 import type { Fleet } from "@/types";
 import { formatRupiah } from "@/lib/format";
-import { siteConfig } from "@/lib/site-config";
-import { quickBookingMessage } from "@/lib/whatsapp";
 
 export function FleetCard({ fleet }: { fleet: Fleet }) {
+  const bookingUrl = `/pesan?armada=${encodeURIComponent(fleet.name)}`;
+
   return (
     <Card className="flex flex-col group">
       <Link to={`/armada/${fleet.slug}`} className="relative block aspect-[4/3] overflow-hidden">
@@ -55,13 +55,13 @@ export function FleetCard({ fleet }: { fleet: Fleet }) {
               {formatRupiah(fleet.priceFrom)}
             </span>
           </div>
-          <WhatsAppButton
-            phone={siteConfig.whatsappNumber}
-            message={quickBookingMessage(fleet.name)}
-            size="sm"
+          {/* Arahkan ke halaman form pemesanan dengan armada ter-preselect */}
+          <Link
+            to={bookingUrl}
+            className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-4 py-2 text-sm font-semibold text-white transition-colors shadow-sm"
           >
             Pesan
-          </WhatsAppButton>
+          </Link>
         </div>
       </div>
     </Card>

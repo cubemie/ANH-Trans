@@ -48,6 +48,8 @@ export interface BookingFormData {
   name: string;
   phone: string;
   departureDate: string;
+  returnDate?: string;
+  pickupPoint: string;
   destination: string;
   passengers: string;
   fleetType: string;
