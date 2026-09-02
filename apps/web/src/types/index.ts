@@ -1,4 +1,4 @@
-export type FleetCategory = "medium" | "big" | "hiace" | "elf";
+export type FleetCategory = "medium" | "hiace" | "elf";
 
 export interface Fleet {
   slug: string;

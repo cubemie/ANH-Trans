@@ -21,9 +21,9 @@ export function FleetPreview() {
         <div className="flex justify-center mt-10">
           <Link
             to="/armada"
-            className="inline-flex items-center gap-2 text-brand font-semibold hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-brand text-lg font-semibold hover:gap-3 transition-all duration-200"
           >
-            Lihat Semua Armada <ArrowRight className="h-4 w-4" />
+            Lihat Semua Armada <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
       </Container>

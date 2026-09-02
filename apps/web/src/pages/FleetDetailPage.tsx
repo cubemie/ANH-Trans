@@ -73,19 +73,6 @@ export function FleetDetailPage() {
             </div>
 
             <div className="bg-white rounded-3xl shadow-card p-6">
-              <h3 className="font-bold text-brand-deep mb-1">Harga &amp; Syarat</h3>
-              <p className="text-3xl font-extrabold text-brand-deep mb-4">
-                {formatRupiah(fleet.priceFrom)}
-                <span className="text-sm font-medium text-slate-400"> / hari</span>
-              </p>
-              <ul className="flex flex-col gap-2 mb-6">
-                {fleet.terms.map((t) => (
-                  <li key={t} className="flex items-start gap-2 text-sm text-slate-500">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-brand shrink-0" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
               <Link
                 to={`/pesan?armada=${encodeURIComponent(fleet.name)}`}
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-6 py-4 text-base font-semibold text-white transition-colors shadow-sm"
@@ -93,7 +80,7 @@ export function FleetDetailPage() {
                 <ClipboardList className="h-5 w-5" />
                 Isi Formulir & Pesan
               </Link>
-              <p className="text-xs text-slate-400 text-center mt-2">
+              <p className="text-xs text-slate-400 text-center mt-3">
                 Anda akan diarahkan untuk mengisi formulir pemesanan terlebih dahulu.
               </p>
             </div>
