@@ -1,0 +1,26 @@
+{
+  "name": "busgo-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BusGo - Platform pemesanan Bus Pariwisata & Travel berbasis WhatsApp",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "preview": "npm run preview --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "clean": "rimraf apps/*/dist apps/*/node_modules packages/*/dist packages/*/node_modules node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "packageManager": "npm@10.8.0"
+}
