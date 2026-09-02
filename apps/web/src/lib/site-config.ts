@@ -5,9 +5,9 @@ export const siteConfig = {
   description:
     "Platform digital promosi & pemesanan Bus Pariwisata dan Travel. Booking cepat, harga transparan, langsung via WhatsApp.",
   whatsappNumber: "6281210795000", // format internasional tanpa "+"
-  instagram: "https://instagram.com/busgo.id",
-  facebook: "https://facebook.com/busgo.id",
-  email: "cs@busgo.id",
+  instagram: "https://instagram.com/anhtrans.id",
+  facebook: "https://facebook.com/anhtrans.id",
+  email: "cs@anhtrans.id",
   address: "Jln Pemuda No.9 Sawojajar - Brebes, Kec. Wanasari Kab. Brebes",
   mapsEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253680.5!2d106.7!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDInMDAuMCJF!5e0!3m2!1sid!2sid!4v1700000000000",

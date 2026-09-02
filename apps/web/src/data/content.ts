@@ -51,10 +51,10 @@ export const faqs: FaqItem[] = [
 ];
 
 export const galleryImages: GalleryImage[] = [
-  { src: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop", alt: "Bus pariwisata BusGo", category: "bus" },
+  { src: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop", alt: "Bus pariwisata ANH TRANS", category: "bus" },
   { src: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop", alt: "Interior bus nyaman", category: "interior" },
   { src: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop", alt: "Perjalanan wisata rombongan", category: "wisata" },
-  { src: "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=800&auto=format&fit=crop", alt: "Pelanggan BusGo", category: "pelanggan" },
+  { src: "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=800&auto=format&fit=crop", alt: "Pelanggan ANH TRANS", category: "pelanggan" },
   { src: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=800&auto=format&fit=crop", alt: "Event perusahaan", category: "event" },
   { src: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop", alt: "Armada Big Bus", category: "bus" },
 ];

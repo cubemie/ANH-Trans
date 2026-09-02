@@ -33,7 +33,7 @@ export function Hero() {
             <div className="flex flex-wrap gap-3 mt-2">
               <WhatsAppButton
                 phone={siteConfig.whatsappNumber}
-                message={quickBookingMessage("armada BusGo")}
+                message={quickBookingMessage("armada ANH TRANS")}
                 size="lg"
               >
                 Pesan via WhatsApp
@@ -51,7 +51,7 @@ export function Hero() {
           <div className="relative order-1 lg:order-2">
             <img
               src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop"
-              alt="Armada bus pariwisata BusGo"
+              alt="Armada bus pariwisata ANH TRANS"
               className="w-full rounded-3xl shadow-glass object-cover aspect-[4/3]"
             />
           </div>

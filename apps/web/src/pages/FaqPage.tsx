@@ -59,7 +59,7 @@ export function FaqPage() {
             <p className="text-lg text-slate-500">Masih ada pertanyaan lain?</p>
             <WhatsAppButton
               phone={siteConfig.whatsappNumber}
-              message="Halo Admin, saya ingin bertanya lebih lanjut mengenai layanan BusGo."
+              message="Halo Admin, saya ingin bertanya lebih lanjut mengenai layanan ANH TRANS."
               size="lg"
             >
               Tanya via WhatsApp

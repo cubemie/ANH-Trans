@@ -7,11 +7,7 @@ import { quickBookingMessage } from "@/lib/whatsapp";
 
 const navItems = [
   { to: "/", label: "Beranda" },
-  { to: "/tentang-kami", label: "Tentang Kami" },
   { to: "/armada", label: "Armada" },
-  { to: "/layanan", label: "Layanan" },
-  { to: "/harga", label: "Harga" },
-  { to: "/galeri", label: "Galeri" },
   { to: "/testimoni", label: "Testimoni" },
   { to: "/faq", label: "FAQ" },
   { to: "/kontak", label: "Kontak" },
@@ -68,7 +64,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <WhatsAppButton
               phone={siteConfig.whatsappNumber}
-              message={quickBookingMessage("armada BusGo")}
+              message={quickBookingMessage("armada ANH TRANS")}
               size="sm"
             >
               Pesan Sekarang
@@ -107,7 +103,7 @@ export function Navbar() {
             ))}
             <WhatsAppButton
               phone={siteConfig.whatsappNumber}
-              message={quickBookingMessage("armada BusGo")}
+              message={quickBookingMessage("armada ANH TRANS")}
               className="mt-2"
               fullWidth
             >

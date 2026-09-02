@@ -26,7 +26,7 @@ export function ContactPage() {
             <div className="flex flex-col gap-6">
               <div className="bg-white rounded-3xl shadow-card overflow-hidden">
                 <iframe
-                  title="Lokasi BusGo"
+                  title="Lokasi ANH TRANS"
                   src={siteConfig.mapsEmbedUrl}
                   className="w-full h-64 border-0"
                   loading="lazy"
