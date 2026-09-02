@@ -30,7 +30,7 @@ export function WhyUs() {
       <Container>
         <SectionHeading
           eyebrow="Keunggulan"
-          title="Kenapa Memilih BusGo?"
+          title="Kenapa Memilih ANH TRANS?"
           description="Kami berkomitmen memberikan pengalaman perjalanan terbaik untuk setiap rombongan Anda."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -42,8 +42,8 @@ export function WhyUs() {
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-brand mb-4">
                 <p.icon className="h-6 w-6" />
               </div>
-              <h3 className="font-bold text-brand-deep mb-1.5">{p.title}</h3>
-              <p className="text-sm text-slate-500 leading-relaxed">{p.description}</p>
+              <h3 className="font-bold text-lg text-brand-deep mb-2">{p.title}</h3>
+              <p className="text-base text-slate-500 leading-relaxed">{p.description}</p>
             </div>
           ))}
         </div>

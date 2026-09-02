@@ -1,32 +1,7 @@
 import { Link } from "react-router-dom";
-import { Bus, Instagram, Facebook, Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Instagram, Facebook, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
-const linkGroups = [
-  {
-    title: "Perusahaan",
-    links: [
-      { to: "/tentang-kami", label: "Tentang Kami" },
-      { to: "/galeri", label: "Galeri" },
-      { to: "/kontak", label: "Kontak" },
-    ],
-  },
-  {
-    title: "Layanan",
-    links: [
-      { to: "/armada", label: "Armada" },
-      { to: "/layanan", label: "Layanan Kami" },
-      { to: "/harga", label: "Estimasi Harga" },
-    ],
-  },
-  {
-    title: "Bantuan",
-    links: [
-      { to: "/testimoni", label: "Testimoni" },
-      { to: "/faq", label: "FAQ" },
-    ],
-  },
-];
 
 export function Footer() {
   return (
@@ -35,12 +10,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-white">
-                <Bus className="h-5 w-5" />
-              </span>
-              <span className="text-xl font-extrabold text-white">
-                {siteConfig.name}
-              </span>
+              <img
+                src="/logo-anh-trans.png"
+                alt={siteConfig.name}
+                className="h-14 w-auto object-contain brightness-200"
+              />
             </Link>
             <p className="text-sm leading-relaxed max-w-sm text-brand-soft/80">
               {siteConfig.description}
@@ -67,7 +41,7 @@ export function Footer() {
             </div>
           </div>
 
-          {linkGroups.map((group) => (
+          {/* {linkGroups.map((group) => (
             <div key={group.title}>
               <h4 className="text-white font-semibold mb-4">{group.title}</h4>
               <ul className="flex flex-col gap-2.5">
@@ -83,7 +57,7 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
 
           <div>
             <h4 className="text-white font-semibold mb-4">Kontak</h4>
@@ -109,11 +83,6 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-soft/60">
-          <span>
-            © {new Date().getFullYear()} {siteConfig.name}. Seluruh hak cipta
-            dilindungi.
-          </span>
-          <span>Dibuat dengan React, Vite &amp; Tailwind CSS.</span>
         </div>
       </div>
     </footer>

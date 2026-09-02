@@ -5,7 +5,7 @@ import { buildWhatsAppUrl, quickBookingMessage } from "@/lib/whatsapp";
 export function FloatingWhatsApp() {
   return (
     <a
-      href={buildWhatsAppUrl(quickBookingMessage("armada BusGo"), siteConfig.whatsappNumber)}
+      href={buildWhatsAppUrl(quickBookingMessage("armada ANH TRANS"), siteConfig.whatsappNumber)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat via WhatsApp"

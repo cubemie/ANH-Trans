@@ -30,7 +30,7 @@ export function FaqPage() {
                     onClick={() => setOpenIndex(isOpen ? null : i)}
                     className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                   >
-                    <span className="font-semibold text-brand-deep">{faq.question}</span>
+                    <span className="font-semibold text-lg text-brand-deep">{faq.question}</span>
                     <ChevronDown
                       className={cn(
                         "h-5 w-5 text-brand shrink-0 transition-transform duration-300",
@@ -45,7 +45,7 @@ export function FaqPage() {
                     )}
                   >
                     <div className="overflow-hidden">
-                      <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+                      <p className="px-6 pb-5 text-base text-slate-500 leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -56,10 +56,10 @@ export function FaqPage() {
           </div>
 
           <div className="flex flex-col items-center gap-4 mt-12 text-center">
-            <p className="text-slate-500">Masih ada pertanyaan lain?</p>
+            <p className="text-lg text-slate-500">Masih ada pertanyaan lain?</p>
             <WhatsAppButton
               phone={siteConfig.whatsappNumber}
-              message="Halo Admin, saya ingin bertanya lebih lanjut mengenai layanan BusGo."
+              message="Halo Admin, saya ingin bertanya lebih lanjut mengenai layanan ANH TRANS."
               size="lg"
             >
               Tanya via WhatsApp
