@@ -83,11 +83,6 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-soft/60">
-          <span>
-            © {new Date().getFullYear()} {siteConfig.name}. Seluruh hak cipta
-            dilindungi.
-          </span>
-          <span>Dibuat dengan React, Vite &amp; Tailwind CSS.</span>
         </div>
       </div>
     </footer>

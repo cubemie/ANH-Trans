@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { ShieldCheck, Target, Eye, Award } from "lucide-react";
 import { Container, SectionHeading } from "@busgo/ui";
 import { Hero } from "@/components/sections/Hero";
@@ -6,6 +7,7 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { FleetPreview } from "@/components/sections/FleetPreview";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { BookingSection } from "@/components/sections/BookingSection";
+import { fleets } from "@/data/fleet";
 
 const values = [
   {
@@ -35,6 +37,19 @@ const values = [
 ];
 
 export function HomePage() {
+  const heroImages = fleets.map((f) => f.images[0]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (heroImages.length <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4000); 
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
     <>
       <Hero />
@@ -47,11 +62,18 @@ export function HomePage() {
       <section className="py-16 sm:py-20" id="tentang-kami">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <img
-              src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1200&auto=format&fit=crop"
-              alt="Sejarah perusahaan ANH TRANS"
-              className="w-full rounded-3xl shadow-card object-cover aspect-[4/3]"
-            />
+            <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-card">
+              {heroImages.map((src, index) => (
+                <img
+                  key={src + index}
+                  src={src}
+                  alt={`Sejarah perusahaan ANH TRANS ${index + 1}`}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                    index === currentImageIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
             <div className="flex flex-col gap-4">
               <span className="text-base font-bold uppercase tracking-widest text-brand">
                 Tentang Kami

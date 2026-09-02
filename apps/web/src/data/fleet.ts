@@ -2,56 +2,15 @@ import type { Fleet } from "@/types";
 
 export const fleets: Fleet[] = [
   {
-    slug: "bus-medium-31-seat",
-    name: "Bus Medium",
-    category: "medium",
-    capacity: 31,
-    year: 2022,
-    facilities: ["AC", "TV", "Audio", "Reclining Seat"],
-    priceFrom: 2_500_000,
-    images: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1200&auto=format&fit=crop",
-    ],
-    description:
-      "Cocok untuk rombongan sedang seperti study tour sekolah, wisata keluarga besar, atau perjalanan dinas instansi.",
-    terms: [
-      "Harga belum termasuk BBM luar kota & tol (kondisional)",
-      "DP 30% saat konfirmasi booking",
-      "Driver & co-driver berpengalaman",
-    ],
-  },
-  {
-    slug: "big-bus-59-seat",
-    name: "Big Bus",
-    category: "big",
-    capacity: 59,
-    year: 2023,
-    facilities: ["Toilet", "Karaoke", "Charger", "WiFi", "AC"],
-    priceFrom: 4_500_000,
-    images: [
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=1200&auto=format&fit=crop",
-    ],
-    description:
-      "Armada premium untuk rombongan besar — wisata luar kota, wedding, hingga corporate trip dengan kenyamanan maksimal.",
-    terms: [
-      "Harga belum termasuk BBM luar kota & tol (kondisional)",
-      "DP 30% saat konfirmasi booking",
-      "Free 1x istirahat rest area setiap 4 jam perjalanan",
-    ],
-  },
-  {
     slug: "hiace-14-seat",
     name: "Hiace",
     category: "hiace",
     capacity: 14,
     year: 2023,
-    facilities: ["Full AC", "Audio"],
+    facilities: ["Full AC", "Audio", "Reclining Seat"],
     priceFrom: 1_200_000,
     images: [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200&auto=format&fit=crop",
+      "/armada/hiace-1.jpg",
     ],
     description:
       "Pilihan tepat untuk grup kecil-menengah — antar jemput bandara, perjalanan dinas, atau liburan keluarga.",
@@ -61,19 +20,39 @@ export const fleets: Fleet[] = [
     ],
   },
   {
-    slug: "elf-19-seat",
-    name: "Elf",
-    category: "elf",
-    capacity: 19,
-    year: 2021,
-    facilities: ["AC", "Audio"],
-    priceFrom: 1_500_000,
+    slug: "medium-bus-33-seat",
+    name: "Medium Bus",
+    category: "medium",
+    capacity: 33,
+    year: 2023,
+    facilities: ["AC", "Karaoke", "LED Lighting", "Reclining Seat", "Audio"],
+    priceFrom: 2_500_000,
     images: [
-      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
+      "/armada/medium-bus-interior.jpg",
+      "/armada/medium-bus-exterior.jpg",
     ],
     description:
-      "Solusi ekonomis untuk grup menengah — cocok untuk ziarah, study tour, atau travel antar kota.",
+      "Armada medium bus 33–35 seat dengan interior mewah, pencahayaan LED warna-warni, bantal, dan kursi reclining untuk kenyamanan optimal.",
+    terms: [
+      "Harga belum termasuk BBM luar kota & tol (kondisional)",
+      "DP 30% saat konfirmasi booking",
+      "Driver & co-driver berpengalaman",
+    ],
+  },
+  {
+    slug: "elf-long-18-seat",
+    name: "Isuzu Elf Long",
+    category: "elf",
+    capacity: 18,
+    year: 2022,
+    facilities: ["AC", "Audio", "Kursi Premium"],
+    priceFrom: 1_500_000,
+    images: [
+      "/armada/elf-exterior.jpg",
+      "/armada/elf-interior.jpg",
+    ],
+    description:
+      "Isuzu Elf Long 18 seat — solusi sewa carter terbaik untuk grup menengah, ziarah, study tour, atau perjalanan antar kota.",
     terms: [
       "Harga belum termasuk BBM luar kota & tol (kondisional)",
       "DP 30% saat konfirmasi booking",
@@ -83,7 +62,6 @@ export const fleets: Fleet[] = [
 
 export const fleetCategoryLabel: Record<Fleet["category"], string> = {
   medium: "Bus Medium",
-  big: "Big Bus",
   hiace: "Hiace",
   elf: "Elf",
 };
