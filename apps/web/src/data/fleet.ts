@@ -7,7 +7,7 @@ export const fleets: Fleet[] = [
     category: "hiace",
     capacity: 14,
     year: 2023,
-    facilities: ["Full AC", "Audio", "Reclining Seat"],
+    facilities: ["AC", "Audio", "Reclining Seat"],
     priceFrom: 1_200_000,
     images: [
       "/armada/hiace-1.jpg",

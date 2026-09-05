@@ -5,11 +5,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-size: 17px;
+    font-size: 15px;
   }
   body {
     @apply font-sans text-brand-deep bg-brand-light antialiased;
-    font-size: 1.0625rem;
   }
   h1,
   h2,
