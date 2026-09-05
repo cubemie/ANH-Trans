@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { ChevronLeft, Users, Cog, Fuel, Check, ClipboardList } from "lucide-react";
 import { Badge, Container } from "@busgo/ui";
 import { getFleetBySlug, fleetCategoryLabel } from "@/data/fleet";
-import { formatRupiah } from "@/lib/format";
+
 
 export function FleetDetailPage() {
   const { slug } = useParams<{ slug: string }>();
